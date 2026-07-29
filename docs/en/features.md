@@ -1,5 +1,23 @@
 # Features
 
+## Feature Status
+
+| Capability | Status | Comment |
+| --- | --- | --- |
+| Public website | Pilot | published as the external product entry |
+| Work panel | Pilot | private working version |
+| Clients and search | Pilot | basic operations contour |
+| Document upload | Pilot | UI and processing contour |
+| OCR/PDF extraction | Pilot contour | isolated service contract |
+| CSV statements | Pilot | deterministic normalization |
+| Basic reconciliation | Pilot | amount, date, counterparty |
+| Draft journal entries | Pilot | approval required |
+| Tasks and deadlines | Pilot | basic control layer |
+| Object storage | Roadmap | required before real-data production |
+| MFA and expanded roles | Roadmap | production gate |
+| 1C/EDI/banks/tax/email | Roadmap | sandbox-first integration path |
+| Normative RAG | Designed | enable only after source evaluation |
+
 ## Client Workspace
 
 - Unified client and organization registry.
@@ -82,4 +100,3 @@ Target integrations:
 - SLA and overdue tasks.
 - Clients per accountant.
 - Processing cost per document and per client.
-

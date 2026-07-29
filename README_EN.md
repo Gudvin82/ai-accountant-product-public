@@ -1,5 +1,10 @@
 # AI Accountant
 
+[![Docs](https://img.shields.io/badge/docs-RU%20%2F%20EN-blue)](./README.md)
+[![Status](https://img.shields.io/badge/status-public%20product%20dossier-1f6f50)](./docs/en/status.md)
+[![Source](https://img.shields.io/badge/source-private-lightgrey)](./README.md)
+[![License](https://img.shields.io/badge/license-CC%20BY%204.0-green)](./LICENSE)
+
 **AI Accountant** is a product concept and architecture dossier for an
 AI-assisted operations platform for accounting outsourcing teams.
 
@@ -56,10 +61,16 @@ decisions on its own. Every material result should include:
 - [Features](./docs/en/features.md)
 - [Architecture](./docs/en/architecture.md)
 - [Use Cases](./docs/en/use-cases.md)
+- [Human-in-the-loop](./docs/en/human-in-the-loop.md)
+- [Product Limitations](./docs/en/limitations.md)
+- [AI Risk Model](./docs/en/ai-risk-model.md)
+- [Integration Map](./docs/en/integrations.md)
+- [Pilot Metrics](./docs/en/metrics.md)
 - [Security And Compliance](./docs/en/security.md)
 - [Roadmap](./docs/en/roadmap.md)
 - [Product Status](./docs/en/status.md)
 - [FAQ](./docs/en/faq.md)
+- [Changelog](./CHANGELOG.md)
 
 ## Status
 
@@ -81,6 +92,16 @@ Production launch requires a separate phase: durable document storage, backups,
 MFA, expanded roles, legal review for personal-data compliance, and real
 integrations with 1C, EDI, banks, tax services, and email.
 
+## Product Maturity
+
+| Layer | Status |
+| --- | --- |
+| Product concept | defined |
+| Private pilot contour | partially implemented |
+| Public documentation | published |
+| Production-ready platform | roadmap |
+| Source code | private |
+
 ## What This Repository Does Not Include
 
 - production source code;
@@ -90,11 +111,20 @@ integrations with 1C, EDI, banks, tax services, and email.
 - internal infrastructure addresses;
 - private business agreements.
 
+## For Partners
+
+This repository is open for pilot discussions, partnerships, and architecture
+review around AI-assisted accounting operations.
+
+- Telegram: [@a_malishev](https://t.me/a_malishev)
+- GitHub: [Gudvin82](https://github.com/Gudvin82)
+
 ## Methodology
 
 The dossier is organized as product engineering work:
 
-- Vibe Coding Protocols: intent, control, proof, and gates;
+- [Vibe Coding Protocols](https://github.com/Gudvin82/vibe-coding-protocols):
+  intent, control, proof, and gates;
 - strong engineering practice: contracts, boundaries, observability;
 - GitHub Spec Kit style: specifications, plans, tasks, acceptance criteria;
 - honest separation of `implemented`, `designed`, and `roadmap`.
@@ -103,4 +133,3 @@ The dossier is organized as product engineering work:
 
 Created by Anatoliy Malyshev as part of an AI product, automation, and product
 architecture portfolio.
-

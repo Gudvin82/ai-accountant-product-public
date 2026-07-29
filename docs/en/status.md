@@ -20,20 +20,19 @@ and roadmap. It does not contain source code or secrets.
 
 Status: partially implemented in a private working version.
 
-Available:
-
-- public website;
-- login;
-- client dashboard;
-- document upload;
-- OCR/PDF contour;
-- bank data import;
-- basic reconciliation;
-- draft journal entries;
-- human approval;
-- tasks and calendar;
-- status warnings;
-- architecture and security documentation.
+| Layer | Status | Comment |
+| --- | --- | --- |
+| Public website | Pilot | external entry and pilot request |
+| Login | Pilot | route to the private work contour |
+| Client dashboard | Pilot | search, filters, basic states |
+| Document upload | Pilot | UI and processing through a service contract |
+| OCR/PDF contour | Pilot contour | isolated provider boundary |
+| Bank data import | Pilot | CSV and PDF direction |
+| Basic reconciliation | Pilot | first matches and discrepancies |
+| Draft journal entries | Pilot | human approval required |
+| Tasks and calendar | Pilot | basic deadline control |
+| Production storage | Roadmap | required before real data |
+| 1C/EDI/banks/tax/email | Roadmap | real credentials and contracts separately |
 
 ## Designed
 
@@ -77,4 +76,3 @@ risk control, and development plan.
 
 For a portfolio, this is often stronger than a code repository without product
 context.
-

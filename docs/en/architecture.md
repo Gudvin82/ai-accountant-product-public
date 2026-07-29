@@ -6,6 +6,25 @@ AI Accountant is designed as a modular platform. The core owns clients,
 documents, operations, tasks, roles, and audit. Heavy AI/OCR work is isolated
 behind service contracts.
 
+```mermaid
+flowchart TD
+    A["Accountant / Manager"] --> B["Workspace"]
+    C["Public website"] --> D["Login / pilot request"]
+    D --> B
+    B --> E["Core API"]
+    E --> F["Clients and organizations"]
+    E --> G["Documents and operations"]
+    E --> H["Tasks and deadlines"]
+    E --> I["Audit trail"]
+    G --> J["Object storage"]
+    G --> K["OCR / Document Intelligence"]
+    G --> L["Bank parser"]
+    E --> M["LLM Router"]
+    M --> N["Normative RAG"]
+    E --> O["Connectors"]
+    O --> P["1C / EDI / banks / tax services / email"]
+```
+
 ```text
 Public website
     |
@@ -33,6 +52,28 @@ Core API: clients, documents, operations, tasks, audit
 - Fail closed: provider failures must not silently produce unsafe conclusions.
 - Privacy by design: documents and personal data require controlled storage,
   access, retention, and logging.
+
+## Data Flow
+
+```mermaid
+sequenceDiagram
+    participant User as Accountant
+    participant App as Workspace
+    participant Core as Core API
+    participant OCR as OCR/PDF
+    participant AI as LLM Router
+    participant Audit as Audit trail
+
+    User->>App: Uploads a document or statement
+    App->>Core: Creates processing record
+    Core->>OCR: Sends file for extraction
+    OCR-->>Core: Fields, confidence, coordinates
+    Core->>AI: Requests draft explanation or journal entry
+    AI-->>Core: Suggestion with limitations
+    Core-->>App: Shows result to accountant
+    User->>App: Approves, corrects, or rejects
+    App->>Audit: Records decision and basis
+```
 
 ## Target Components
 
@@ -83,4 +124,3 @@ interface alone.
 
 Chat can be one interaction surface, but the product foundation is data, states,
 tasks, approvals, sources, and audit.
-

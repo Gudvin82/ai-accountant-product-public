@@ -1,5 +1,10 @@
 # AI-Бухгалтер
 
+[![Документы](https://img.shields.io/badge/docs-RU%20%2F%20EN-blue)](./README.md)
+[![Статус](https://img.shields.io/badge/status-public%20product%20dossier-1f6f50)](./docs/ru/status.md)
+[![Код](https://img.shields.io/badge/source-private-lightgrey)](./README.md)
+[![Лицензия](https://img.shields.io/badge/license-CC%20BY%204.0-green)](./LICENSE)
+
 **AI-Бухгалтер** — это продуктовая концепция и архитектурное досье платформы
 для бухгалтерского аутсорсинга.
 
@@ -55,10 +60,16 @@ AI-Бухгалтер превращает разрозненную работу
 - [Возможности](./docs/ru/features.md)
 - [Архитектура](./docs/ru/architecture.md)
 - [Сценарии использования](./docs/ru/use-cases.md)
+- [Human-in-the-loop](./docs/ru/human-in-the-loop.md)
+- [Ограничения продукта](./docs/ru/limitations.md)
+- [Модель AI-рисков](./docs/ru/ai-risk-model.md)
+- [Интеграционная карта](./docs/ru/integrations.md)
+- [Метрики пилота](./docs/ru/metrics.md)
 - [Безопасность и соответствие](./docs/ru/security.md)
 - [Roadmap](./docs/ru/roadmap.md)
 - [Статус продукта](./docs/ru/status.md)
 - [FAQ](./docs/ru/faq.md)
+- [Changelog](./CHANGELOG.md)
 
 ## Состояние
 
@@ -80,6 +91,16 @@ AI-Бухгалтер превращает разрозненную работу
 резервные копии, MFA, расширенные роли, юридическая проверка 152-ФЗ, реальные
 интеграции с 1С, ЭДО, банками, ФНС и email.
 
+## Product Maturity
+
+| Слой | Статус |
+| --- | --- |
+| Продуктовая концепция | определена |
+| Приватный пилотный контур | частично реализован |
+| Публичная документация | опубликована |
+| Production-ready платформа | roadmap |
+| Исходный код | приватный |
+
 ## Что Репозиторий Не Содержит
 
 - исходный код продукта;
@@ -89,11 +110,20 @@ AI-Бухгалтер превращает разрозненную работу
 - внутренние инфраструктурные адреса;
 - приватные бизнес-договоренности.
 
+## Для Партнеров
+
+Репозиторий открыт для обсуждения пилота, партнерства и архитектурного ревью
+AI-автоматизации бухгалтерских процессов.
+
+- Telegram: [@a_malishev](https://t.me/a_malishev)
+- GitHub: [Gudvin82](https://github.com/Gudvin82)
+
 ## Методология
 
 Досье собрано в стиле product engineering:
 
-- Vibe Coding Protocols: намерение, контроль, доказательства, gates;
+- [Vibe Coding Protocols](https://github.com/Gudvin82/vibe-coding-protocols):
+  намерение, контроль, доказательства, gates;
 - сильная инженерная практика: контракты, сервисные границы, наблюдаемость;
 - GitHub Spec Kit: спецификации, планы, задачи, acceptance criteria;
 - честное разделение `implemented`, `designed`, `roadmap`.
@@ -102,4 +132,3 @@ AI-Бухгалтер превращает разрозненную работу
 
 Проект создан Анатолием Малышевым как часть портфолио AI-продуктов,
 автоматизации и продуктовой архитектуры.
-
