@@ -19,6 +19,18 @@ prioritizes, and explains. The final decision stays with a human specialist.
 > This is a public portfolio repository. It does not contain source code,
 > credentials, client data, private deployment details, or internal prompts.
 
+## How It Works
+
+```mermaid
+flowchart LR
+    A["Document or bank statement"] --> B["OCR / parsing"]
+    B --> C["Matching and discrepancy checks"]
+    C --> D["AI draft: entry, reason, client question"]
+    D --> E["Accountant review"]
+    E --> F["Approved decision"]
+    F --> G["Audit trail and future export"]
+```
+
 ## Who It Is For
 
 - Accounting outsourcing firms.
@@ -64,6 +76,11 @@ decisions on its own. Every material result should include:
 - [Human-in-the-loop](./docs/en/human-in-the-loop.md)
 - [Product Limitations](./docs/en/limitations.md)
 - [AI Risk Model](./docs/en/ai-risk-model.md)
+- [Business Value](./docs/en/business-value.md)
+- [User Journey](./docs/en/user-journey.md)
+- [Evidence Model](./docs/en/evidence-model.md)
+- [Market Context](./docs/en/market-context.md)
+- [For Partners](./docs/en/for-partners.md)
 - [Integration Map](./docs/en/integrations.md)
 - [Pilot Metrics](./docs/en/metrics.md)
 - [Security And Compliance](./docs/en/security.md)

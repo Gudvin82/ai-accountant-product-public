@@ -25,12 +25,26 @@ AI-assisted operating layer for accounting outsourcing teams.
 - [Русская версия](./README_RU.md)
 - [English version](./README_EN.md)
 
+## How It Works / Как Это Работает
+
+```mermaid
+flowchart LR
+    A["Document or bank statement"] --> B["OCR / parsing"]
+    B --> C["Matching and discrepancy checks"]
+    C --> D["AI draft: entry, reason, client question"]
+    D --> E["Accountant review"]
+    E --> F["Approved decision"]
+    F --> G["Audit trail and future export"]
+```
+
 ## What This Repository Shows
 
 - Product vision for an AI accounting operations platform.
 - Target feature map and user workflows.
 - Human-in-the-loop accounting approval model.
 - AI risk model and explicit product limitations.
+- Evidence model for every material AI suggestion.
+- Business value and partner pilot framing.
 - Integration map for 1C, EDI, banks, email, tax services, and CRM.
 - Business metrics for pilot validation.
 - Public architecture without sensitive implementation details.
@@ -58,6 +72,19 @@ docs/
   en/   English product dossier
   ru/   Русское продуктовое досье
 ```
+
+## Trust & Business Layer
+
+- RU: [business value](./docs/ru/business-value.md),
+  [user journey](./docs/ru/user-journey.md),
+  [evidence model](./docs/ru/evidence-model.md),
+  [market context](./docs/ru/market-context.md),
+  [for partners](./docs/ru/for-partners.md)
+- EN: [business value](./docs/en/business-value.md),
+  [user journey](./docs/en/user-journey.md),
+  [evidence model](./docs/en/evidence-model.md),
+  [market context](./docs/en/market-context.md),
+  [for partners](./docs/en/for-partners.md)
 
 ## Public Status
 

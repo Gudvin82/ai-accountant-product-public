@@ -64,6 +64,9 @@ Status: partially implemented in a private working version.
 | Product concept | strong |
 | Pilot UX | strong |
 | Architecture direction | formed |
+| Business value | described |
+| Evidence model | described |
+| Partner pilot | described |
 | Production backend | next phase required |
 | Compliance readiness | specialist review required |
 | Integrations | roadmap |

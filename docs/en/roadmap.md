@@ -17,6 +17,20 @@ Status: completed in this public repository.
 - Roadmap.
 - RU/EN documentation.
 
+## Run 0.5: Trust And Business Layer
+
+Goal: make the repository understandable not only for engineers, but also for
+partners, accounting-firm managers, and potential pilot clients.
+
+Status: completed in this public repository.
+
+- Business value.
+- End-to-end user journey.
+- Evidence model.
+- Market context.
+- Partner pilot guide.
+- Simplified workflow diagram in README.
+
 ## Run 1: Real-Data Pilot Foundation
 
 Priority: P0.
@@ -101,4 +115,3 @@ Priority: P2.
 - Client and management reports.
 
 Exit: quality, cost, risks, and the commercial model are measurable.
-
